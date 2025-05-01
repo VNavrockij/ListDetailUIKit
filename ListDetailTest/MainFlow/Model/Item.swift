@@ -7,8 +7,12 @@
 
 import Foundation
 
-struct Item: Codable {
+struct CharacterItem: Codable {
     let id: Int
-    let title: String
-    let body: String
+    let name: String
+    let image: String
+}
+
+struct CharacterResponse: Codable {
+    let results: [CharacterItem]
 }
